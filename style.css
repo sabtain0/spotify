@@ -8,9 +8,11 @@ body {
 }
 
 nav {
-    background-color: black;
+    background-color: rgb(49, 31, 31);
     color: white;
     height: 11vh;
+    border: 2px solid black;
+    top:0;
     position:sticky;
 }
 
