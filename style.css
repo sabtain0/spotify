@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(243, 243, 225);
+    background-color: red;
 }
 
 nav {
@@ -40,16 +40,17 @@ nav ul li {
 }
 
 .container {
-    /* min-height: 10vh; */
-    background-color: black;
+    min-height: 10vh;
+    width: 20vw;
+    /* background-color: black; */
     color: white;
     margin: 22px 0;
     padding: 1%;
     display: flex;
     border-radius: 9px;
-    background: url("sd.jpg");
-    width: 70%;
-    background-size: cover;
+    background-image: url("peakpx (4).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .bottom {
@@ -61,10 +62,12 @@ nav ul li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: sticky;
 }
 
 .icon {
     margin-top: 14px;
+    /* padding: 33px; */
 }
 
 #progressbar {
@@ -73,17 +76,23 @@ nav ul li {
 
 .songItem {
     display: flex;
-    cursor:pointer;
+    cursor: pointer;
     height: 50px;
     background-color: white;
     color: black;
     margin: 33px;
     width: auto;
     border-radius: 23px;
-    /* justify-content: center; */
+    justify-content: center;
     margin: auto;
     padding: 13px;
     align-items: center;
+     transition: background-color 0.5s; 
+     
+}
+
+.songItem:hover {
+    background-color: rgb(135, 109, 201);
 }
 
 .songItem img {
@@ -96,11 +105,13 @@ nav ul li {
 
     margin: 97px -35%;
 }
-.imageinfo{
+
+.imageinfo {
     position: absolute;
     left: 10vw;
 }
-.imageinfo img{
+
+.imageinfo img {
     opacity: 0;
     transition: opacity 1s ease-in;
 }
@@ -133,7 +144,6 @@ nav ul li {
         padding: 3px 3px;
         border-radius: 23px;
         align-items: center;
-
     }
 
     .songItem img {
