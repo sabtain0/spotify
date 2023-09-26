@@ -124,6 +124,7 @@ nav ul li {
         background-color: black;
         color: white;
         height: 9vh;
+        position:sticky;
     }
 
     nav ul li {
